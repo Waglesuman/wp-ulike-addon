@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 // Define the table name
 global $wpdb;
 $table_name = $wpdb->prefix . 'cpm_table';
-define('SLACK_WEBHOOK', 'https://hooks.slack.com/services/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');
+define('SLACK_WEBHOOK', 'https://hooks.slack.com/services/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');
 
 
 // Create the table on plugin activation
@@ -166,7 +166,7 @@ function cpm_javascript_code()
   <script>
     jQuery(document).ready(function () {
 
-      jQuery('.wp_ulike_btn_is_active').each(function (index, item) {
+      jQuery('.wp_ulike_btn').each(function (index, item) {
         jQuery(item).on("click", item, function (event) {
           event.preventDefault();
 
@@ -196,7 +196,7 @@ function cpm_javascript_code()
 
       // here is te code to remove from table
 
-      jQuery('.wp_ulike_btn_is_active').each(function (index, item) {
+      jQuery('.wp_ulike_btn').each(function (index, item) {
         jQuery(item).on("click", item, function (event) {
           event.preventDefault();
 
